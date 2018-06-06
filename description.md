@@ -15,7 +15,7 @@
 
 ## Evaluation Environment
 
-We have evaluate two environments: Mac Pro (Mid 2010) and Google Compute Engine(GCE) \cite{GCE}. 
+We have evaluated two environments: Mac Pro (Mid 2010) and Google Compute Engine(GCE) \cite{GCE}. 
 
 1. Mac Pro (Mid 2010) has one 2.8GHz Quad-Core Intel Xeon with 16GB memories and ATI Radeon HD 5770 with 1024MB memories. 
 
