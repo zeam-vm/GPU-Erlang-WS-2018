@@ -1,13 +1,15 @@
 # Introduction
 
-
+* TensorFlow \cite{TensorFlow}, Keras \cite{Keras} 
 * GPGPU \cite{Nickolls:2008:SPP:1401132.1401152}
+* Elixir \cite{Elixir} \cite{Elixir16}
+
+# Implementation
 
 * Our previous work \cite{ZACKY18}
-
-* Elixir \cite{Elixir} \cite{Elixir16}
-* TensorFlow \cite{TensorFlow}, Keras \cite{Keras} 
 * Logistic Maps \cite{Miyazaki14}
+* Rust \cite{Rust}, Rustler \cite{Rustler}
+
 
 # Performance Evaluation
 
@@ -25,12 +27,14 @@ We have evaluate two environments: Mac Pro (Mid 2010) and Google Compute Engine(
 
 The version of OpenCL \cite{OpenCL} is 1.2.
 
+## Benchmarks
+
+* Python \cite{Python}, NumPy \cite{NumPy}
+
 ## Evaluation Result
 
 Table \ref{result} shows the result of the benchmarks. 
 
-* Rust \cite{Rust}, Rustler \cite{Rustler}
-* Python \cite{Python}, NumPy \cite{NumPy}
 
 
 \begin{table*}[]
@@ -40,7 +44,8 @@ Table \ref{result} shows the result of the benchmarks.
 \begin{tabular}{lll|r|r|}
            &                  &              & \multicolumn{1}{l|}{Mac Pro (Mid 2010)} & \multicolumn{1}{l|}{GCE}              \\
            &                  &              & \multicolumn{1}{l|}{2.8GHz Quad-Core Intel Xeon} & \multicolumn{1}{l|}{Intel Broadwell vCPU:8}           \\
-           &                  &              & \multicolumn{1}{l|}{ATI Radeon HD 5770} & \multicolumn{1}{l|}{NVIDIA Tesla K80} \\ \hline
+           &                  &              & \multicolumn{1}{l|}{ATI Radeon HD 5770} & \multicolumn{1}{l|}{NVIDIA Tesla K80} \\ 
+           &                  &              &  (sec)        & (sec) \\ \hline
 benchmark1 & Elixir      & loop         & 12.80              & 9.537            \\
 benchmark3 & Elixir      & inlining     & 11.57              & 8.020            \\
 benchmark8 & Elixir / Rustler & CPU          & 9.703              & 7.908            \\
