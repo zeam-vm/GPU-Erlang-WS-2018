@@ -1,4 +1,4 @@
-\documentclass[sigplan, anonymous, review]{acmart}
+\documentclass[sigplan]{acmart}
 
 \usepackage{booktabs} % For formal tables
 
@@ -15,111 +15,85 @@
 
 
 % DOI
-\acmDOI{10.475/123_4}
+%\acmDOI{10.475/123_4}
 
 % ISBN
-\acmISBN{123-4567-24-567/08/06}
+%\acmISBN{123-4567-24-567/08/06}
 
 %Conference
-\acmConference[WOODSTOCK'97]{ACM Woodstock conference}{July 1997}{El
-  Paso, Texas USA}
-\acmYear{1997}
-\copyrightyear{2016}
+\acmConference[Erlang Workshop 2018]{17th ACM SIGPLAN Erlang Workshop}{September 2018}{St. Louis, Missouri USA}
+\acmYear{2018}
+\copyrightyear{2018}
 
-\acmPrice{15.00}
+%\acmPrice{15.00}
 
 %\acmBadgeL[http://ctuning.org/ae/ppopp2016.html]{ae-logo}
 %\acmBadgeR[http://ctuning.org/ae/ppopp2016.html]{ae-logo}
 
 
 \begin{document}
-\title{SIG Proceedings Paper in LaTeX Format}
-\titlenote{Produces the permission block, and
-  copyright information}
-\subtitle{Extended Abstract}
-\subtitlenote{The full version of the author's guide is available as
-  \texttt{acmart.pdf} document}
+\title{Elixir Performs GPGPU}
+%\titlenote{Produces the permission block, and
+%  copyright information}
+%\subtitle{}
+%\subtitlenote{The full version of the author's guide is available as
+%  \texttt{acmart.pdf} document}
 
-\author{Ben Trovato}
-\authornote{Dr.~Trovato insisted his name be first.}
-\orcid{1234-5678-9012}
+\author{Susumu YAMAZAKI}
+%\authornote{Dr.~Trovato insisted his name be first.}
+%\orcid{1234-5678-9012}
 \affiliation{%
-  \institution{Institute for Clarity in Documentation}
-  \streetaddress{P.O. Box 1212}
-  \city{Dublin}
-  \state{Ohio}
-  \postcode{43017-6221}
+  \institution{University of Kitakyushu}
+  \streetaddress{1-1 Hibikino, Wakamatsu-ku}
+  \city{Kitakyushu}
+  \state{Fukuoka}
+  \country{Japan}
+  \postcode{808-0135}
 }
-\email{trovato@corporation.com}
+\email{zacky@kitakyu-u.ac.jp}
 
-\author{G.K.M. Tobin}
-\authornote{The secretary disavows any knowledge of this author's actions.}
+\author{Masakazu MORI}
+%\authornote{The secretary disavows any knowledge of this author's actions.}
 \affiliation{%
-  \institution{Institute for Clarity in Documentation}
-  \streetaddress{P.O. Box 1212}
-  \city{Dublin}
-  \state{Ohio}
-  \postcode{43017-6221}
+  \institution{Delight Systems Co., Ltd.}
+  \streetaddress{4-34 Izaki, Chuo-ku}
+  \city{Fukuoka}
+  \state{Fukuoka}
+  \country{Japan}
+  \postcode{810-0067}
 }
-\email{webmaster@marysville-ohio.com}
+%\email{}
 
-\author{Lars Th{\o}rv{\"a}ld}
-\authornote{This author is the
-  one who did all the really hard work.}
+\author{Yoshihiro UENO}
+%\authornote{This author is the
+%  one who did all the really hard work.}
 \affiliation{%
-  \institution{The Th{\o}rv{\"a}ld Group}
-  \streetaddress{1 Th{\o}rv{\"a}ld Circle}
-  \city{Hekla}
-  \country{Iceland}}
-\email{larst@affiliation.org}
-
-\author{Valerie B\'eranger}
-\affiliation{%
-  \institution{Inria Paris-Rocquencourt}
-  \city{Rocquencourt}
-  \country{France}
+  \institution{Delight Systems Co., Ltd.}
+  \streetaddress{4-34 Izaki, Chuo-ku}
+  \city{Fukuoka}
+  \state{Fukuoka}
+  \country{Japan}
+  \postcode{810-0067}
 }
-\author{Aparna Patel}
-\affiliation{%
- \institution{Rajiv Gandhi University}
- \streetaddress{Rono-Hills}
- \city{Doimukh}
- \state{Arunachal Pradesh}
- \country{India}}
-\author{Huifen Chan}
-\affiliation{%
-  \institution{Tsinghua University}
-  \streetaddress{30 Shuangqing Rd}
-  \city{Haidian Qu}
-  \state{Beijing Shi}
-  \country{China}}
+%\email{larst@affiliation.org}
 
-\author{Charles Palmer}
+\author{Hideki TAKASE}
 \affiliation{%
-  \institution{Palmer Research Laboratories}
-  \streetaddress{8600 Datapoint Drive}
-  \city{San Antonio}
-  \state{Texas}
-  \postcode{78229}}
-\email{cpalmer@prl.com}
-
-\author{John Smith}
-\affiliation{\institution{The Th{\o}rv{\"a}ld Group}}
-\email{jsmith@affiliation.org}
-
-\author{Julius P.~Kumquat}
-\affiliation{\institution{The Kumquat Consortium}}
-\email{jpkumquat@consortium.net}
+  \institution{Kyoto University}
+  \streetaddress{}
+  \city{Kyoto}
+  \state{Kyoto}
+  \country{Japan}
+  \postcode{810-0067}
+}
 
 
 % The default list of authors is too long for headers.
-\renewcommand{\shortauthors}{B. Trovato et al.}
+\renewcommand{\shortauthors}{S. Yamazaki et al.}
 
 
 \begin{abstract}
-This paper provides a sample of a \LaTeX\ document which conforms,
-somewhat loosely, to the formatting guidelines for
-ACM SIG Proceedings.
+We have succeeded in implementing a demonstration program in which an Elixir code invokes directly a GPGPU benchmark by Rustler. 
 \end{abstract}
 
 %
