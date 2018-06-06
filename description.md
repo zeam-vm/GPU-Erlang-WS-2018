@@ -5,7 +5,7 @@
 
 * Our previous work \cite{ZACKY18}
 
-* Elixir \cite{Elixir16}
+* Elixir \cite{Elixir} \cite{Elixir16}
 * TensorFlow \cite{TensorFlow}, Keras \cite{Keras} 
 * Logistic Maps \cite{Miyazaki14}
 
@@ -29,6 +29,10 @@ The version of OpenCL \cite{OpenCL} is 1.2.
 
 Table \ref{result} shows the result of the benchmarks. 
 
+* Rust \cite{Rust}, Rustler \cite{Rustler}
+* Python \cite{Python}, NumPy \cite{NumPy}
+
+
 \begin{table*}[]
 \centering
 \caption{The result of the benchmarks}
@@ -37,15 +41,15 @@ Table \ref{result} shows the result of the benchmarks.
            &                  &              & \multicolumn{1}{l|}{Mac Pro (Mid 2010)} & \multicolumn{1}{l|}{GCE}              \\
            &                  &              & \multicolumn{1}{l|}{2.8GHz Quad-Core Intel Xeon} & \multicolumn{1}{l|}{Intel Broadwell vCPU:8}           \\
            &                  &              & \multicolumn{1}{l|}{ATI Radeon HD 5770} & \multicolumn{1}{l|}{NVIDIA Tesla K80} \\ \hline
-benchmark1 & pure Elixir      & loop         & 12.80              & 9.537            \\
-benchmark3 & pure Elixir      & inlining     & 11.57              & 8.020            \\
+benchmark1 & Elixir      & loop         & 12.80              & 9.537            \\
+benchmark3 & Elixir      & inlining     & 11.57              & 8.020            \\
 benchmark8 & Elixir / Rustler & CPU          & 9.703              & 7.908            \\
 \rowcolor[HTML]{C0C0C0} 
 benchmark9 & Elixir / Rustler & OpenCL (GPU) & 6.572              & 4.494            \\
 empty      & Elixir / Rustler & empty        & 6.027              & 4.022            \\
-Rust\_CPU  & pure Rust        & CPU          & 2.721              & 1.723            \\
+Rust\_CPU  & Rust        & CPU          & 2.721              & 1.723            \\
 \rowcolor[HTML]{C0C0C0} 
-Rust\_GPU  & pure Rust        & OpenCL (GPU) & 1.857              & 0.7942           \\
+Rust\_GPU  & Rust        & OpenCL (GPU) & 1.857              & 0.7942           \\
 Python     & Python           & NumPy (CPU)  & 17.75              & N/A          
 \end{tabular}
 \end{table*}
