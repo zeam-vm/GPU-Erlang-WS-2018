@@ -9,7 +9,7 @@
 * Our previous work \cite{ZACKY18}
 * Logistic Maps \cite{Miyazaki14}
 * Rust \cite{Rust}, Rustler \cite{Rustler}
-
+* ocl \cite{ocl}
 
 # Performance Evaluation
 
