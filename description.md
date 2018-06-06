@@ -34,7 +34,7 @@ Table \ref{result} shows the result of the benchmarks.
 \caption{The result of the benchmarks}
 \label{result}
 \begin{tabular}{lll|r|r|}
-           &                  &              & \multicolumn{1}{l|}{Mac Pro 2010} & \multicolumn{1}{l|}{GCE}              \\
+           &                  &              & \multicolumn{1}{l|}{Mac Pro (Mid 2010)} & \multicolumn{1}{l|}{GCE}              \\
            &                  &              & \multicolumn{1}{l|}{2.8GHz Quad-Core Intel Xeon} & \multicolumn{1}{l|}{Intel Broadwell vCPU:8}           \\
            &                  &              & \multicolumn{1}{l|}{ATI Radeon HD 5770} & \multicolumn{1}{l|}{NVIDIA Tesla K80} \\ \hline
 benchmark1 & pure Elixir      & loop         & 12.80              & 9.537            \\
