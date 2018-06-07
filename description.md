@@ -45,7 +45,7 @@ We will show the following benchmarks:
 * Rust\_GPU: that is written in only Rust. The logistic maps are calculated by GPU via OpenCL with ocl.
 * Python: that is written in only \cite{Python} with NumPy \cite{NumPy}.
 
-## Evaluation Result
+## Evaluation Result and Discussion
 
 Table \ref{result} shows the result of the benchmarks. 
 
