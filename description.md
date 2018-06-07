@@ -29,7 +29,16 @@ The version of OpenCL \cite{OpenCL} is 1.2.
 
 ## Benchmarks
 
-* Python \cite{Python}, NumPy \cite{NumPy}
+We will show the following benchmarks:
+
+* Benchmark1: that is written in only Elixir \cite{Elixir}. The calculation of the logistic maps is implemented using 10 times recursive calls.
+* Benchmark3: that is written in only Elixir. The calculation of the logistic maps is inlined inside of Flow. 
+* Benchmark8: that is written in Elixir and Rust with Rustler \cite{Rustler}. The logistic maps are calculated by CPU with the native code in Rust \cite{Rust}.
+* Benchmark9: that is written in Elixir and Rust with Rustler. The logistic maps are calculated by GPU via OpenCL \cite{OpenCL} with the native code in Rust and ocl \cite{ocl}.
+* Empty: that is a dummy benchmark to be compared from a efficient point of view. It includes conversion between expressions of a list in Elixir and a vector in Rust, though it does not include the caliculation.
+* Rust\_CPU: that is written in only Rust. The logistic maps are calculated by CPU.
+* Rust\_GPU: that is written in only Rust. The logistic maps are calculated by GPU via OpenCL with ocl.
+* Python: that is written in only \cite{Python} with NumPy \cite{NumPy}.
 
 ## Evaluation Result
 
@@ -46,12 +55,12 @@ Table \ref{result} shows the result of the benchmarks.
            &                  &              & \multicolumn{1}{l|}{2.8GHz Quad-Core Intel Xeon} & \multicolumn{1}{l|}{Intel Broadwell vCPU:8}           \\
            &                  &              & \multicolumn{1}{l|}{ATI Radeon HD 5770} & \multicolumn{1}{l|}{NVIDIA Tesla K80} \\ 
            &                  &              &  (sec)        & (sec) \\ \hline
-benchmark1 & Elixir      & loop         & 12.80              & 9.537            \\
-benchmark3 & Elixir      & inlining     & 11.57              & 8.020            \\
-benchmark8 & Elixir / Rustler & CPU          & 9.703              & 7.908            \\
+Benchmark1 & Elixir      & recursive call & 12.80              & 9.537            \\
+Benchmark3 & Elixir      & inlining     & 11.57              & 8.020            \\
+Benchmark8 & Elixir / Rustler & CPU          & 9.703              & 7.908            \\
 \rowcolor[HTML]{C0C0C0} 
-benchmark9 & Elixir / Rustler & OpenCL (GPU) & 6.572              & 4.494            \\
-empty      & Elixir / Rustler & empty        & 6.027              & 4.022            \\
+Benchmark9 & Elixir / Rustler & OpenCL (GPU) & 6.572              & 4.494            \\
+Empty      & Elixir / Rustler & empty        & 6.027              & 4.022            \\
 Rust\_CPU  & Rust        & CPU          & 2.721              & 1.723            \\
 \rowcolor[HTML]{C0C0C0} 
 Rust\_GPU  & Rust        & OpenCL (GPU) & 1.857              & 0.7942           \\
