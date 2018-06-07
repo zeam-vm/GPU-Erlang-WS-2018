@@ -69,6 +69,6 @@ Empty      & Elixir / Rustler & empty        & 6.027              & 4.022       
 Rust\_CPU  & Rust        & CPU          & 2.721              & 1.723            \\
 \rowcolor[HTML]{C0C0C0} 
 Rust\_GPU  & Rust        & OpenCL (GPU) & 1.857              & 0.7942           \\
-Python     & Python           & NumPy (CPU)  & 17.75              & N/A          
+Python     & Python           & NumPy (CPU)  & 17.75              & 11.34          
 \end{tabular}
 \end{table*}
