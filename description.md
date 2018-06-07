@@ -4,9 +4,14 @@
 * GPGPU \cite{Nickolls:2008:SPP:1401132.1401152}
 * Elixir \cite{Elixir} \cite{Elixir16}
 
-# Implementation
+# Principle
 
 * Our previous work \cite{ZACKY18}
+* MapReduce \cite{Dean:2008:MSD:1327452.1327492}
+* Flow \cite{Flow}
+
+# Implementation
+
 * Logistic Maps \cite{Miyazaki14}
 * Rust \cite{Rust}, Rustler \cite{Rustler}
 * ocl \cite{ocl}
@@ -32,7 +37,7 @@ The version of OpenCL \cite{OpenCL} is 1.2.
 We will show the following benchmarks:
 
 * Benchmark1: that is written in only Elixir \cite{Elixir}. The calculation of the logistic maps is implemented using 10 times recursive calls.
-* Benchmark3: that is written in only Elixir. The calculation of the logistic maps is inlined inside of Flow. 
+* Benchmark3: that is written in only Elixir. The calculation of the logistic maps is inlined inside of Flow \cite{Flow}. 
 * Benchmark8: that is written in Elixir and Rust with Rustler \cite{Rustler}. The logistic maps are calculated by CPU with the native code in Rust \cite{Rust}.
 * Benchmark9: that is written in Elixir and Rust with Rustler. The logistic maps are calculated by GPU via OpenCL \cite{OpenCL} with the native code in Rust and ocl \cite{ocl}.
 * Empty: that is a dummy benchmark to be compared from a efficient point of view. It includes conversion between expressions of a list in Elixir and a vector in Rust, though it does not include the caliculation.
