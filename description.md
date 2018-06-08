@@ -84,7 +84,7 @@ Python\_GPU & Python      & CuPy (GPU)   & N/A                & 4.316 \\
 
 We have conducted the performance evaluation of the experimental implementation of GPGPU by Elixir and Rustler. We have got the following result:
 
-* Elixir and Rustler code using GPU is 1.76--2.12 times and 2.52-2.7 times faster than pure Elixir and Python code executed by only CPU, respectively.
+* Elixir and Rustler code using GPU is 1.76--2.12 times and 2.52--2.7 times faster than pure Elixir and Python code executed by only CPU, respectively.
 * Elixir and Rustler code using GPU is almost as fast as Python code using GPU.
 * Native code using GPU is 3.54--5.66 times faster than Elixir and Rustler code and Python code using GPU. This is the potential of optimization.
 

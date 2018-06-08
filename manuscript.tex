@@ -94,7 +94,7 @@
 
 
 \begin{abstract}
-We have succeeded in implementing a demonstration program in which an Elixir code invokes directly a GPGPU benchmark by Rustler. 
+We have succeeded in implementing a demonstration program in which an Elixir code invokes directly a GPGPU benchmark by Rustler. We have conducted the performance evaluation of the experimental implementation of GPGPU by Elixir and Rustler. We have got the following result: (1) Elixir and Rustler code using GPU is 1.76--2.12 times and 2.52--2.7 times faster than pure Elixir and Python code executed by only CPU, respectively. (2) Elixir and Rustler code using GPU is almost as fast as Python code using GPU. (3) Native code using GPU is 3.54--5.66 times faster than Elixir and Rustler code and Python code using GPU. This is the potential of optimization. We realize that Erlang VM is not enough performance for such optimization, including elimination of the conversions between lists and vectors, which is the main reason of the overhead. Thus, We will implement Hastega, which is a new processing system of Elixir, which has a enough ability to drive GPUs and optimize the conversions.
 \end{abstract}
 
 %
