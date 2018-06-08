@@ -54,7 +54,8 @@ Table \ref{result} shows the result of the benchmarks.
 * The ratio of the difference between Benchmark9 and Empty is 8.29--10.5 percents. We indentify that it is net execution time apart from the overhead of the conversions between expressions of a list in Elixir and a vector in Rust.
 * Pure Elixir and Benchmark9 is 1.19--1.53 times and 2.52--2.7 times faster than Python\_CPU, respectively.
 * Benchmark9 is almost as fast as Python\_GPU.
-* The ratios of the difference between Bnechmark8 and Rust\_CPU and between Benchmark9 and Rust\_GPU is 72.0--78.2 and 71.7--82.3 percents, respectively. We identify that it is the overhead of Erlang VM. Rust\_GPU is 3.54--5.66 times faster than Benchmark9 and Python\_GPU. This is the potential of optimization.
+* The ratios of the difference between Bnechmark8 and Rust\_CPU and between Benchmark9 and Rust\_GPU is 72.0--78.2 and 71.7--82.3 percents, respectively. We identify that it is the overhead of Erlang VM. 
+* Rust\_GPU is 3.54--5.66 times faster than Benchmark9 and Python\_GPU. This is the potential of optimization.
 
 \begin{table*}[]
 \centering
