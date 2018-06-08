@@ -50,7 +50,7 @@ We will show the following benchmarks:
 
 Table \ref{result} shows the result of the benchmarks. 
 
-* Benchmark9 is 1.76--2.12 times faster than Pure Elixir (Benchmark1 and Benchmark3).
+* Benchmark9 is 1.76--2.12 times faster than pure Elixir (Benchmark1 and Benchmark3).
 * The ratio of the difference between Benchmark9 and Empty is 8.29--10.5 percents. We indentify that it is net execution time apart from the overhead of the conversions between expressions of a list in Elixir and a vector in Rust.
 * Pure Elixir and Benchmark9 is 1.19--1.53 times and 2.52--2.7 times faster than Python\_CPU, respectively.
 * Benchmark9 is almost as fast as Python\_GPU.
@@ -79,3 +79,15 @@ Python\_CPU & Python      & NumPy (CPU)  & 17.75              & 11.34 \\
 Python\_GPU & Python      & CuPy (GPU)   & N/A                & 4.316 \\           
 \end{tabular}
 \end{table*}
+
+# Conclusion and Future Works
+
+We have conducted the performance evaluation of the experimental implementation of GPGPU by Elixir and Rustler. We have got the following result:
+
+* Elixir and Rustler code using GPU is 1.76--2.12 times and 2.52-2.7 times faster than pure Elixir and Python code executed by only CPU, respectively.
+* Elixir and Rustler code using GPU is almost as fast as Python code using GPU.
+* Native code using GPU is 3.54--5.66 times faster than Elixir and Rustler code and Python code using GPU. This is the potential of optimization.
+
+We realize that Erlang VM is not enough performance for such optimization, including elimination of the conversions between lists and vectors, which is the main reason of the overhead. Thus, We will implement Hastega, which is a new processing system of Elixir, which has a enough ability to drive GPUs and optimize the conversions.
+
+We also have a plan to implement mathematic and machine learning libraries in Elixir, which is implemented using Flow. Of course, we will apply Hastega to the libraries, and compare them with that of Python.
