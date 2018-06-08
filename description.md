@@ -30,7 +30,17 @@ We have evaluated two environments: Mac Pro (Mid 2010) and Google Compute Engine
 	* GPU: one NVIDIA Tesla K80
 	* Zone: us-west1-b
 
-The version of OpenCL \cite{OpenCL} is 1.2.
+The versions of software are as follows:
+
+* Elixir \cite{Elixir}: 
+* Rust \cite{Rust}: 1.26.1
+* OpenCL \cite{OpenCL}: 1.2.
+* Python \cite{Python}: 3.5.2
+* Rustler \cite{Rustler}: 
+* ocl \cite{ocl}: 
+* CUDA \cite{CUDA} : 9.0
+* NumPy \cite{NumPy}: 1.14.3
+* CuPy \cite{CuPy}: 4.1.0
 
 ## Benchmarks
 
