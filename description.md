@@ -57,7 +57,7 @@ Table \ref{result} shows the result of the benchmarks.
 * The ratios of the difference between Bnechmark8 and Rust\_CPU and between Benchmark9 and Rust\_GPU is 72.0--78.2 and 71.7--82.3 percents, respectively. We identify that it is the overhead of Erlang VM. 
 * Rust\_GPU is 3.54--5.66 times faster than Benchmark9 and Python\_GPU. This is the potential of optimization.
 
-\begin{table*}[]
+\begin{table*}[t]
 \centering
 \caption{The result of the benchmarks}
 \label{result}
