@@ -40,16 +40,21 @@ We will show the following benchmarks:
 * Benchmark3: that is written in only Elixir. The calculation of the logistic maps is inlined inside of Flow \cite{Flow}. 
 * Benchmark8: that is written in Elixir and Rust with Rustler \cite{Rustler}. The logistic maps are calculated by CPU with the native code in Rust \cite{Rust}.
 * Benchmark9: that is written in Elixir and Rust with Rustler. The logistic maps are calculated by GPU via OpenCL \cite{OpenCL} with the native code in Rust and ocl \cite{ocl}.
-* Empty: that is a dummy benchmark to be compared from a efficient point of view. It includes conversion between expressions of a list in Elixir and a vector in Rust, though it does not include the caliculation.
+* Empty: that is a dummy benchmark to be compared from a efficient point of view. It includes conversions between expressions of a list in Elixir and a vector in Rust, though it does not include the caliculation.
 * Rust\_CPU: that is written in only Rust. The logistic maps are calculated by CPU.
 * Rust\_GPU: that is written in only Rust. The logistic maps are calculated by GPU via OpenCL with ocl.
-* Python: that is written in only \cite{Python} with NumPy \cite{NumPy}.
+* Python\_CPU: that is written in only \cite{Python} with NumPy \cite{NumPy}.
+* Python\_GPU: that is written in only \cite{Python} with CuPy \cite{CuPy} with GPU.
 
 ## Evaluation Result and Discussion
 
 Table \ref{result} shows the result of the benchmarks. 
 
-
+* Benchmark9 is 1.76--2.12 times faster than Pure Elixir (Benchmark1 and Benchmark3).
+* The ratio of the difference between Benchmark9 and Empty is 8.29--10.5 percents. We indentify that it is net execution time apart from the overhead of the conversions between expressions of a list in Elixir and a vector in Rust.
+* Pure Elixir and Benchmark9 is 1.19--1.53 times and 2.52--2.7 times faster than Python\_CPU, respectively.
+* Benchmark9 is almost as fast as Python\_GPU.
+* The ratios of the difference between Bnechmark8 and Rust\_CPU and between Benchmark9 and Rust\_GPU is 72.0--78.2 and 71.7--82.3 percents, respectively. We identify that it is the overhead of Erlang VM. Rust\_GPU is 3.54--5.66 times faster than Benchmark9 and Python\_GPU. This is the potential of optimization.
 
 \begin{table*}[]
 \centering
@@ -69,6 +74,7 @@ Empty      & Elixir / Rustler & empty        & 6.027              & 4.022       
 Rust\_CPU  & Rust        & CPU          & 2.721              & 1.723            \\
 \rowcolor[HTML]{C0C0C0} 
 Rust\_GPU  & Rust        & OpenCL (GPU) & 1.857              & 0.7942           \\
-Python     & Python           & NumPy (CPU)  & 17.75              & 11.34          
+Python\_CPU & Python      & NumPy (CPU)  & 17.75              & 11.34 \\
+Python\_GPU & Python      & CuPy (GPU)   & N/A                & 4.316 \\           
 \end{tabular}
 \end{table*}
