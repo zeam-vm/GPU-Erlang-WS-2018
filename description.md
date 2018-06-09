@@ -1,8 +1,11 @@
 # Introduction
 
-* TensorFlow \cite{TensorFlow}, Keras \cite{Keras} 
-* GPGPU \cite{Nickolls:2008:SPP:1401132.1401152}
-* Elixir \cite{Elixir} \cite{Elixir16}
+It becomes popular that machine learning using libraries such as TensorFlow \cite{TensorFlow} and Keras \cite{Keras} is applied to social implementation. Thus, GPGPU technologies \cite{Nickolls:2008:SPP:1401132.1401152} is researched and developed because such machine learning requires more performance. However, current GPGPU libraries such as CUDA \cite{CUDA}, CuPy \cite{CuPy}, TensorFlow and Keras are two problems:
+
+1. **Performance Problem:** Python \cite{Python} has basicly poor performance because it is based on single-threaded interpretation, except from native libraries such as NumPy \cite{NumPy} and CuPy \cite{CuPy}. 
+2. **Setting Problem:**: Native libraries in Python are difficult to set up. It requires troublesome installation and settings.
+
+Thus, we adopt Elixir \cite{Elixir} for the purpose of machine learning, because it has awesome parallel programming performance \cite{Elixir16}. However, now Elixir has no GPGPU support. Thus, we try to implement GPGPU support in Elixir.
 
 # Our Idea
 
@@ -110,8 +113,7 @@ Python\_GPU & Python      & CuPy (GPU)   & N/A                & 4.316 \\
 
 # Conclusion and Future Works
 
-We have proposed to convert an Elixir code using Flow to a GPU executable code because such an Elixir code fits the SIMD architecture that is adopted as GPUs.
-
+To solve the performance and setting problems of Python and its libraries, we have proposed to convert an Elixir code using Flow to a GPU executable code because such an Elixir code fits the SIMD architecture that is adopted as GPUs.
 
 We have shown a demonstration benchmark using the Logistic Maps. We describe the native code in our benchmark in Rust using Rustler and ocl. This leads to awesome easiness of setting.
 
