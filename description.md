@@ -35,7 +35,7 @@ We adopt the Logistic Maps over prime fields \cite{Miyazaki14}, whose recurrence
   X_{i+1} = \mu_p X_i (X_i + 1) \mod p
 \end{displaymath}
 
-We describe the native code in our benchmark in Rust \cite{Rust} using Rustler \cite{Rustler} and ocl \cite{ocl}. This leads to awesome easiness of setting: it requires only installing languages, OpenCL \cite{OpenCL} and our benchmark by each one-sentence command. This is a big advantage over Python\cite{Python}, CUDA\cite{CUDA} and related libraries such as CuPy\cite{CuPy}.  
+We have implemented it in our previous work \cite{emb48, ZACKY18}. Then, we describe the native code in our benchmark in Rust \cite{Rust} using Rustler \cite{Rustler} and ocl \cite{ocl}. This leads to awesome easiness of setting: it requires only installing languages, OpenCL \cite{OpenCL} and our benchmark by each one-sentence command. This is a big advantage over Python\cite{Python}, CUDA\cite{CUDA} and related libraries such as CuPy\cite{CuPy}.  
 
 # Performance Evaluation
 
