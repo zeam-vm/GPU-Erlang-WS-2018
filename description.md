@@ -32,12 +32,12 @@ We have evaluated two environments: Mac Pro (Mid 2010) and Google Compute Engine
 
 The versions of software are as follows:
 
-* Elixir \cite{Elixir}: 
+* Elixir \cite{Elixir}: 1.6.5 (OTP 20.3)
 * Rust \cite{Rust}: 1.26.1
-* OpenCL \cite{OpenCL}: 1.2.
+* OpenCL \cite{OpenCL}: 1.2
 * Python \cite{Python}: 3.5.2
-* Rustler \cite{Rustler}: 
-* ocl \cite{ocl}: 
+* Rustler \cite{Rustler}: 0.16.0
+* ocl \cite{ocl}: 0.16
 * CUDA \cite{CUDA} : 9.0
 * NumPy \cite{NumPy}: 1.14.3
 * CuPy \cite{CuPy}: 4.1.0
