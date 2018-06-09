@@ -26,9 +26,13 @@ Our idea is shown in our previous work \cite{ZACKY18}: The parallel programming 
 
 # Implementation
 
-* Logistic Maps \cite{Miyazaki14}
-* Rust \cite{Rust}, Rustler \cite{Rustler}
-* ocl \cite{ocl}
+We adopt the Logistic Maps over prime fields \cite{Miyazaki14}, whose recurrence relation is shown in the following equation as a benchmark because it requires much integer calculation, which can be converted to a GPU assembly code easily:
+
+\begin{displaymath}
+  X_{i+1} = \mu_p X_i (X_i + 1) \mod p
+\end{displaymath}
+
+We describe the native code in our benchmark in Rust \cite{Rust} using Rustler \cite{Rustler} and ocl \cite{ocl}. This leads to awesome easiness of setting: it requires only installing languages, OpenCL \cite{OpenCL} and our benchmark by each one-sentence command. This is a big advantage over Python\cite{Python}, CUDA\cite{CUDA} and related libraries such as CuPy\cite{CuPy}.  
 
 # Performance Evaluation
 
@@ -108,6 +112,8 @@ Python\_GPU & Python      & CuPy (GPU)   & N/A                & 4.316 \\
 
 We have proposed to convert an Elixir code using Flow to a GPU executable code because such an Elixir code fits the SIMD architecture that is adopted as GPUs.
 
+
+We have shown a demonstration benchmark using the Logistic Maps. We describe the native code in our benchmark in Rust using Rustler and ocl. This leads to awesome easiness of setting.
 
 We have conducted the performance evaluation of the experimental implementation of GPGPU by Elixir and Rustler. We have got the following results:
 
