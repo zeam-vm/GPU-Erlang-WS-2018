@@ -3,7 +3,7 @@
 It becomes popular that machine learning using libraries such as TensorFlow \cite{TensorFlow} and Keras \cite{Keras} is applied to social implementation. Thus, GPGPU technologies \cite{Nickolls:2008:SPP:1401132.1401152} is researched and developed because such machine learning requires more performance. However, current GPGPU libraries such as CUDA \cite{CUDA}, CuPy \cite{CuPy}, TensorFlow and Keras are two problems:
 
 1. **Performance Problem:** Python \cite{Python} has basicly poor performance because it is based on single-threaded interpretation, except from native libraries such as NumPy \cite{NumPy} and CuPy \cite{CuPy}. This is serious when the system manipurates a mass of data by the Python interpreter before processing by the native libraries.
-2. **Setting Problem:** The native libraries in Python using GPUs are difficult to set up. It requires troublesome installation and settings.
+2. **Setting Problem:** The native libraries in Python using GPUs are difficult to set up. It requires troublesome installation and settings. Furthormore, they support only NVIDIA GPUs.
 
 Thus, we adopt Elixir \cite{Elixir} for the purpose of machine learning, because it has awesome parallel programming performance \cite{Elixir16}. However, now Elixir has no GPGPU support. Thus, we try to implement GPGPU support in Elixir.
 
