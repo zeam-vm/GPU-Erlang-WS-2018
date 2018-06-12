@@ -84,10 +84,10 @@ We have evaluated two environments: Mac Pro (Mid 2010) and Google Compute Engine
 
 We will show the following benchmarks:
 
-* Benchmark1: that is written in only Elixir \cite{Elixir}. The calculation of the logistic maps is implemented using 10 times recursive calls.
-* Benchmark3: that is written in only Elixir. The calculation of the logistic maps is inlined inside of Flow \cite{Flow}. 
-* Benchmark8: that is written in Elixir and Rust with Rustler \cite{Rustler}. The logistic maps are calculated by CPU with the native code in Rust \cite{Rust}.
-* Benchmark9: that is written in Elixir and Rust with Rustler. The logistic maps are calculated by GPU via OpenCL \cite{OpenCL} with the native code in Rust and ocl \cite{ocl}.
+* Elixir\_recursive: that is written in only Elixir \cite{Elixir}. The calculation of the logistic maps is implemented using 10 times recursive calls.
+* Elixir\_inlining: that is written in only Elixir. The calculation of the logistic maps is inlined inside of Flow \cite{Flow}. 
+* Elixir\_Rustler\_CPU: that is written in Elixir and Rust with Rustler \cite{Rustler}. The logistic maps are calculated by CPU with the native code in Rust \cite{Rust}.
+* Elixir\_Rustler\_GPU: that is written in Elixir and Rust with Rustler. The logistic maps are calculated by GPU via OpenCL \cite{OpenCL} with the native code in Rust and ocl \cite{ocl}.
 * Empty: that is a dummy benchmark to be compared from a efficient point of view. It includes conversions between expressions of a list in Elixir and a vector in Rust, though it does not include the caliculation.
 * Rust\_CPU: that is written in only Rust. The logistic maps are calculated by CPU.
 * Rust\_GPU: that is written in only Rust. The logistic maps are calculated by GPU via OpenCL with ocl.
@@ -98,12 +98,12 @@ We will show the following benchmarks:
 
 Table \ref{result} shows the result of the benchmarks. 
 
-* Benchmark9 is 1.76--2.12 times faster than pure Elixir (Benchmark1 and Benchmark3).
-* The ratio of the difference between Benchmark9 and Empty is 8.29--10.5 percents. We indentify that it is net execution time apart from the overhead of the conversions between expressions of a list in Elixir and a vector in Rust.
-* Pure Elixir and Benchmark9 is 1.19--1.53 times and 2.52--2.7 times faster than Python\_CPU, respectively.
-* Benchmark9 is almost as fast as Python\_GPU.
-* The ratios of the difference between Bnechmark8 and Rust\_CPU and between Benchmark9 and Rust\_GPU is 72.0--78.2 and 71.7--82.3 percents, respectively. We identify that it is the overhead of Erlang VM. 
-* Rust\_GPU is 3.54--5.66 times faster than Benchmark9 and Python\_GPU. This is the potential of optimization.
+* Elixir\_Rustler\_GPU is 1.76--2.12 times faster than pure Elixir (Elixir\_recursive and Elixir\_inlining).
+* The ratio of the difference between Elixir\_Rustler\_GPU and Empty is 8.29--10.5 percents. We indentify that it is net execution time apart from the overhead of the conversions between expressions of a list in Elixir and a vector in Rust.
+* Pure Elixir and Elixir\_Rustler\_GPU is 1.19--1.53 times and 2.52--2.7 times faster than Python\_CPU, respectively.
+* Elixir\_Rustler\_GPU is almost as fast as Python\_GPU.
+* The ratios of the difference between Bnechmark8 and Rust\_CPU and between Elixir\_Rustler\_GPU and Rust\_GPU is 72.0--78.2 and 71.7--82.3 percents, respectively. We identify that it is the overhead of Erlang VM. 
+* Rust\_GPU is 3.54--5.66 times faster than Elixir\_Rustler\_GPU and Python\_GPU. This is the potential of optimization.
 
 \begin{table*}[t]
 \centering
@@ -114,11 +114,11 @@ Table \ref{result} shows the result of the benchmarks.
            &                  &              & \multicolumn{1}{l|}{2.8GHz Quad-Core Intel Xeon} & \multicolumn{1}{l|}{Intel Broadwell vCPU:8}           \\
            &                  &              & \multicolumn{1}{l|}{ATI Radeon HD 5770} & \multicolumn{1}{l|}{NVIDIA Tesla K80} \\ 
            &                  &              &  (sec)        & (sec) \\ \hline
-Benchmark1 & Elixir      & recursive call & 12.796           & 9.537            \\
-Benchmark3 & Elixir      & inlining     & 11.571             & 8.020            \\
-Benchmark8 & Elixir / Rustler & CPU          & 9.703              & 7.908            \\
+Elixir\_recursive & Elixir      & recursive call & 12.796           & 9.537            \\
+Elixir\_inlining & Elixir      & inlining     & 11.571             & 8.020            \\
+Elixir\_Rustler\_CPU & Elixir / Rustler & CPU          & 9.703              & 7.908            \\
 \rowcolor[HTML]{C0C0C0} 
-Benchmark9 & Elixir / Rustler & OpenCL (GPU) & 6.572              & 4.494            \\
+Elixir\_Rustler\_GPU & Elixir / Rustler & OpenCL (GPU) & 6.572              & 4.494            \\
 Empty      & Elixir / Rustler & empty        & 6.027              & 4.022            \\
 Rust\_CPU  & Rust        & CPU          & 2.721              & 1.723            \\
 \rowcolor[HTML]{C0C0C0} 
