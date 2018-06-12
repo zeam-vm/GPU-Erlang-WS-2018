@@ -114,16 +114,16 @@ Table \ref{result} shows the result of the benchmarks.
            &                  &              & \multicolumn{1}{l|}{2.8GHz Quad-Core Intel Xeon} & \multicolumn{1}{l|}{Intel Broadwell vCPU:8}           \\
            &                  &              & \multicolumn{1}{l|}{ATI Radeon HD 5770} & \multicolumn{1}{l|}{NVIDIA Tesla K80} \\ 
            &                  &              &  (sec)        & (sec) \\ \hline
-Benchmark1 & Elixir      & recursive call & 12.80              & 9.537            \\
-Benchmark3 & Elixir      & inlining     & 11.57              & 8.020            \\
+Benchmark1 & Elixir      & recursive call & 12.796           & 9.537            \\
+Benchmark3 & Elixir      & inlining     & 11.571             & 8.020            \\
 Benchmark8 & Elixir / Rustler & CPU          & 9.703              & 7.908            \\
 \rowcolor[HTML]{C0C0C0} 
 Benchmark9 & Elixir / Rustler & OpenCL (GPU) & 6.572              & 4.494            \\
 Empty      & Elixir / Rustler & empty        & 6.027              & 4.022            \\
 Rust\_CPU  & Rust        & CPU          & 2.721              & 1.723            \\
 \rowcolor[HTML]{C0C0C0} 
-Rust\_GPU  & Rust        & OpenCL (GPU) & 1.857              & 0.7942           \\
-Python\_CPU & Python      & NumPy (CPU)  & 17.75              & 11.34 \\
+Rust\_GPU  & Rust        & OpenCL (GPU) & 1.857              & 0.794           \\
+Python\_CPU & Python      & NumPy (CPU)  & 17.749              & 11.341 \\
 Python\_GPU & Python      & CuPy (GPU)   & N/A                & 4.316 \\           
 \end{tabular}
 \end{table*}
