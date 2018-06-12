@@ -39,7 +39,7 @@ We adopt the Logistic Maps over prime fields \cite{Miyazaki14}, whose recurrence
 
 We have implemented it in our previous work \cite{emb48, ZACKY18}. Then, we describe the native code in our benchmark in Rust \cite{Rust} using Rustler \cite{Rustler} and ocl \cite{ocl}. This leads to awesome easiness of setting: it requires only installing languages, OpenCL \cite{OpenCL} and our benchmark by each one-sentence command. This is a big advantage over Python\cite{Python}, CUDA\cite{CUDA} and related libraries such as CuPy\cite{CuPy}.  
 
-Our implementation is published in GitHub \cite{logistic_map}.
+Our implementation is published in GitHub \footnote{LogisticMap: Benchmark of Logistic Map using integer calculation and Flow, available at https://github.com/zeam-vm/logistic\_map}.
 
 # Performance Evaluation
 
@@ -137,8 +137,8 @@ We have shown a demonstration benchmark using the Logistic Maps. We describe the
 We have conducted the performance evaluation of the experimental implementation of GPGPU by Elixir and Rustler. We have got the following results:
 
 * Elixir and Rustler code using GPU is 1.76--2.12 times and 2.52--2.7 times faster than pure Elixir and Python code executed by only CPU, respectively.
-* Elixir and Rustler code using GPU is almost as fast as Python code using GPU.
-* Native code using GPU is 3.54--5.66 times faster than Elixir and Rustler code and Python code using GPU. This is the potential of optimization.
+* The performance gap of Elixir and Rustler code using GPU by our strategy is only 3.54--5.66 times compared with native code using GPU. 
+* Additionally, our Hastega method for Elixir achieves as almost fast as Python code with GPU. 
 
 We realize that Erlang VM is not enough performance for such optimization, including elimination of the conversions between lists and vectors, which is the main reason of the overhead. Thus, We will implement Hastega, which is a new processing system of Elixir, which has a enough ability to drive GPUs and optimize the conversions.
 
