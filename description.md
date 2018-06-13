@@ -9,6 +9,8 @@ One of reasons that research and development of GPGPU is hot is that it becomes 
 
 Thus, we adopt Elixir \cite{Elixir} for the purpose of machine learning, because it has awesome parallel programming performance \cite{Elixir16}. However, now Elixir has no GPGPU support. Thus, we try to implement GPGPU support in Elixir.
 
+Thus, we propose the Hastega method that is based on a hypothesis that a programming style using Flow \cite{Flow} of Elixir, which is similar to the MapReduce model \cite{Dean:2008:MSD:1327452.1327492}, can be converted to GPGPU code easily. We also implement a GPGPU code to manipulate GPUs in Elixir and Rust \cite{Rust} using Rustler \cite{Rustler}. 
+
 The rest of this paper is organized as follows: Section 2 proposes our core idea to convert an Elixir code to drive GPUs. Section 3 describes an implementation of our approach. Section 4 shows environments of our experiments, description of benchmarks and results and discussion. Section 5 concludes this paper and describes future works. 
 
 # Our Strategy
