@@ -35,12 +35,6 @@ Our strategy is shown in our previous work \cite{ZACKY18}: The parallel programm
 
 # Implementation
 
-We adopt the Logistic Maps over prime fields \cite{Miyazaki14}, whose recurrence relation is shown in the following equation as a benchmark because it requires much integer calculation, which can be converted to a GPU assembly code easily:
-
-\begin{displaymath}
-  X_{i+1} = \mu_p X_i (X_i + 1) \mod p
-\end{displaymath}
-
 We have implemented it in our previous work \cite{emb48, ZACKY18}. Then, we describe the native code in our benchmark in Rust \cite{Rust} using Rustler \cite{Rustler} and ocl \cite{ocl}. This leads to awesome easiness of setting: it requires only installing languages, OpenCL \cite{OpenCL} and our benchmark by each one-sentence command. This is a big advantage over Python\cite{Python}, CUDA\cite{CUDA} and related libraries such as CuPy\cite{CuPy}.  
 
 Our implementation is published in GitHub \footnote{LogisticMap: Benchmark of Logistic Map using integer calculation and Flow, available at https://github.com/zeam-vm/logistic\_map}.
@@ -48,6 +42,12 @@ Our implementation is published in GitHub \footnote{LogisticMap: Benchmark of Lo
 # Performance Evaluation
 
 ## Evaluation Environment
+
+We adopt the Logistic Maps over prime fields \cite{Miyazaki14}, whose recurrence relation is shown in the following equation as a benchmark because it requires much integer calculation, which can be converted to a GPU assembly code easily:
+
+\begin{displaymath}
+  X_{i+1} = \mu_p X_i (X_i + 1) \mod p
+\end{displaymath}
 
 
 We have evaluated two environments: Mac Pro (Mid 2010) and Google Compute Engine(GCE) \cite{GCE}. 
