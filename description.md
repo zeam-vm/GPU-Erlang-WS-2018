@@ -52,7 +52,8 @@ We have evaluated two environments: Mac Pro (Mid 2010) and Google Compute Engine
 
 1. Mac Pro (Mid 2010) has one 2.8GHz Quad-Core Intel Xeon with 16GB memories and ATI Radeon HD 5770 with 1024MB memories. We use the following versions of software:
 	* macOS: Sierra 10.12.6
-	* Elixir \cite{Elixir}: 1.6.1 (OTP 20)
+	* Elixir \cite{Elixir}: 1.6.1 (OTP 20.3.6)
+	* Flow \cite{Flow}: 0.13
 	* Rust \cite{Rust}: 1.26.0
 	* OpenCL \cite{OpenCL}: 1.2
 	* Python \cite{Python}: 3.6.0 (Anaconda 4.3.0)
@@ -71,7 +72,8 @@ We have evaluated two environments: Mac Pro (Mid 2010) and Google Compute Engine
 	\end{itemize}
    We use the following versions of software:
 	* ubuntu: 16.04
-	* Elixir \cite{Elixir}: 1.6.5 (OTP 20.3)
+	* Elixir \cite{Elixir}: 1.6.5 (OTP 20.3.6)
+	* Flow \cite{Flow}: 0.13
 	* Rust \cite{Rust}: 1.26.1
 	* OpenCL \cite{OpenCL}: 1.2
 	* Python \cite{Python}: 3.5.2
