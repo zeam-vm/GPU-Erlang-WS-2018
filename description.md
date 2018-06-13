@@ -37,6 +37,26 @@ We have implemented it in our previous work \cite{emb48, ZACKY18}. Then, we desc
 
 Our implementation is published in GitHub \footnote{LogisticMap: Benchmark of Logistic Map using integer calculation and Flow, available at https://github.com/zeam-vm/logistic\_map}.
 
+# Easiness of Setting
+
+Table \ref{setting} shows comparison of steps of setting processes in Google Compute Engine(GCE) \cite{GCE}. 
+
+Setting CUDA and OpenCL in CuPy \cite{CuPy} needs more steps than our Hastega because CuPy requires older CUDA \cite{CUDA}, which requires us to investigate Q \& A sites such as Stack Overflow \cite{StackOverflow}.
+
+Installation of our Hastega is never tedious. Its building tool sets up itself, automatically. All you need is to install OpenCL \cite{OpenCL}, to install Elixir \cite{Elixir} and Rust \cite{Rust}, and to install our Hastega.
+
+\begin{table}[b]
+\centering
+\caption{Comparison of Steps of Setting Processes in GCE}
+\label{setting}
+\begin{tabular}{lrr}
+                               & \multicolumn{1}{l}{CuPy} & \multicolumn{1}{l}{Hastega} \\ \hline
+Installation of CUDA \& OpenCL & 4                        & 1                           \\
+Installation of Languages      & 1                        & 2                           \\
+Installation of Libraries      & 2                        & 1                           \\ \hline
+\end{tabular}
+\end{table}
+
 # Performance Evaluation
 
 ## Evaluation Environment
@@ -48,7 +68,7 @@ We adopt the Logistic Maps over prime fields \cite{Miyazaki14}, whose recurrence
 \end{displaymath}
 
 
-We have evaluated two environments: Mac Pro (Mid 2010) and Google Compute Engine(GCE) \cite{GCE}. 
+We have evaluated two environments: Mac Pro (Mid 2010) and GCE \cite{GCE}. 
 
 1. Mac Pro (Mid 2010) has one 2.8GHz Quad-Core Intel Xeon with 16GB memories and ATI Radeon HD 5770 with 1024MB memories. We use the following versions of software:
 	* macOS: Sierra 10.12.6
