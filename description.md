@@ -45,7 +45,7 @@ Setting CUDA and OpenCL in CuPy \cite{CuPy} needs more steps than our Hastega be
 
 Installation of our Hastega is never tedious. Its building tool sets up itself, automatically. All you need is to install OpenCL \cite{OpenCL}, to install Elixir \cite{Elixir} and Rust \cite{Rust}, and to install our Hastega.
 
-\begin{table}[b]
+\begin{table}[t]
 \centering
 \caption{Comparison of Steps of Setting Processes in GCE}
 \label{setting}
@@ -70,39 +70,35 @@ We adopt the Logistic Maps over prime fields \cite{Miyazaki14}, whose recurrence
 
 We have evaluated two environments: Mac Pro (Mid 2010) and GCE \cite{GCE}. 
 
-1. Mac Pro (Mid 2010) has one 2.8GHz Quad-Core Intel Xeon with 16GB memories and ATI Radeon HD 5770 with 1024MB memories. We use the following versions of software:
-	* macOS: Sierra 10.12.6
-	* Elixir \cite{Elixir}: 1.6.1 (OTP 20.3.6)
-	* Flow \cite{Flow}: 0.13
-	* Rust \cite{Rust}: 1.26.0
-	* OpenCL \cite{OpenCL}: 1.2
-	* Python \cite{Python}: 3.6.0 (Anaconda 4.3.0)
-	* Rustler \cite{Rustler}: 0.16.0
-	* ocl \cite{ocl}: 0.18
-	* CUDA \cite{CUDA} : N/A
-	* NumPy \cite{NumPy}: 1.11.3
-	* CuPy \cite{CuPy}: N/A
+1. Mac Pro (Mid 2010) has one 2.8GHz Quad-Core Intel Xeon with 16GB memories and ATI Radeon HD 5770 with 1024MB memories. 
 
 2. Our GCE settings include as follows:
-	\begin{itemize}
-	\item Machine type: custom (8 vCPUs and 16GB memories)
-	\item CPU platform: Intel Broadwell
-	\item GPU: one NVIDIA Tesla K80
-	\item Zone: us-west1-b
-	\end{itemize}
-   We use the following versions of software:
-	* ubuntu: 16.04
-	* Elixir \cite{Elixir}: 1.6.5 (OTP 20.3.6)
-	* Flow \cite{Flow}: 0.13
-	* Rust \cite{Rust}: 1.26.1
-	* OpenCL \cite{OpenCL}: 1.2
-	* Python \cite{Python}: 3.5.2
-	* Rustler \cite{Rustler}: 0.16.0
-	* ocl \cite{ocl}: 0.16
-	* CUDA \cite{CUDA} : 9.0 (in case of using CuPy), 9.2 (other)
-	* NumPy \cite{NumPy}: 1.14.3
-	* CuPy \cite{CuPy}: 4.1.0
+	* Machine type: custom (8 vCPUs and 16GB memories)
+	* CPU platform: Intel Broadwell
+	* GPU: one NVIDIA Tesla K80
+	* Zone: us-west1-b
 
+Table \ref{versions} shows versions of software.
+
+\begin{table*}[t]
+\centering
+\caption{Versions of Software}
+\label{versions}
+\begin{tabular}{l|ll}
+                       & Mac Pro (Mid 2010)     & GCE                                      \\ \hline
+OS                     & Sierra 10.12.6         & ubuntu 16.04                             \\
+Elixir \cite{Elixir}   & 1.6.1 (OTP 20.3.6)     & 1.6.5 (OTP 20.3.6)                       \\
+Flow \cite{Flow}       & 0.13                   & 0.13                                     \\
+Rust \cite{Rust}       & 1.26.0                 & 1.26.1                                   \\
+OpenCL \cite{OpenCL}   & 1.2                    & 1.2                                      \\
+Rustler \cite{Rustler} & 0.16.0                 & 0.16.0                                   \\
+ocl \cite{ocl}         & 0.18                   & 0.16                                     \\ \hline
+Python \cite{Python}   & 3.6.0 (Anaconda 4.3.0) & 3.5.2                                    \\
+CUDA \cite{CUDA}       & N/A                    & 9.0 (in case of using CuPy), 9.2 (other) \\
+NumPy \cite{NumPy}     & 1.11.3                 & 1.14.3                                   \\
+CuPy \cite{CuPy}       & N/A                    & 4.1.0                                   
+\end{tabular}
+\end{table*}
 
 ## Benchmarks
 
