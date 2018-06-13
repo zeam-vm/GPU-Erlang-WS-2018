@@ -1,6 +1,8 @@
 # Introduction
 
-It becomes popular that machine learning using libraries such as TensorFlow \cite{TensorFlow} and Keras \cite{Keras} is applied to social implementation. Thus, GPGPU technologies \cite{Nickolls:2008:SPP:1401132.1401152} is researched and developed because such machine learning requires more performance. However, current GPGPU libraries such as CUDA \cite{CUDA}, CuPy \cite{CuPy}, TensorFlow and Keras are two problems:
+GPGPU technologies \cite{Nickolls:2008:SPP:1401132.1401152} is researched and developed actively. It enables a system to compute very parallel because the arhitecture of GPUs of the main stream is based on the SIMD (Single Instruction, Multiple Data) model, which is suitable for hyper parallel computing.
+
+One of reasons that research and development of GPGPU is hot is that it becomes popular that machine learning using libraries such as TensorFlow \cite{TensorFlow} and Keras \cite{Keras} is applied to social implementation, and such machine learning requires more performance. The de facto standard programming language of machine learning is Python \{Python}. However, current GPGPU libraries such as CUDA \cite{CUDA}, CuPy \cite{CuPy}, TensorFlow and Keras, which are based on Python, are two problems:
 
 1. **Performance Problem:** Python \cite{Python} has basicly poor performance because it is based on single-threaded interpretation, except from native libraries such as NumPy \cite{NumPy} and CuPy \cite{CuPy}. This is serious when the system manipurates a mass of data by the Python interpreter before processing by the native libraries.
 2. **Setting Problem:** The native libraries in Python using GPUs are difficult to set up. It requires troublesome installation and settings. Furthormore, they support only NVIDIA GPUs.
