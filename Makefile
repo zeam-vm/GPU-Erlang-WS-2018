@@ -2,7 +2,7 @@ PDF = manuscript.pdf
 
 all: ${PDF}
 
-%.pdf:  %.tex acmart.cls description.tex ACM-Reference-Format.bst reference.bib 
+%.pdf:  %.tex acmart.cls description.tex ACM-Reference-Format.bst reference.bib Hastega-arch.png Hastega-arch.pdf
 	pdflatex $<
 	- bibtex $*
 	pdflatex $<
