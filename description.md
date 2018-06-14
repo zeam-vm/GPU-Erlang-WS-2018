@@ -61,7 +61,7 @@ Disadvantage of Hastega is installation of Languages: it requires two languages,
 \begin{tabular}{lrr}
                                & \multicolumn{1}{l}{CuPy} & \multicolumn{1}{l}{Hastega} \\ \hline
 Installation of CUDA \& OpenCL & 4                        & 1                           \\
-Installation of Languages      & 2                        & 4                           \\
+Installation of Languages      & 0                        & 4                           \\
 Installation of Libraries      & 2                        & 1                           \\ \hline
 \end{tabular}
 \end{table}
