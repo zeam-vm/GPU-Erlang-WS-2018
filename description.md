@@ -41,9 +41,12 @@ Our implementation is published in GitHub \footnote{LogisticMap: Benchmark of Lo
 
 Table \ref{setting} shows comparison of steps of setting processes in Google Compute Engine(GCE) \cite{GCE}. 
 
+Installation of our Hastega is never tedious. Its building tool sets up itself, automatically. All you need is to install OpenCL \cite{OpenCL}, to install and set up Elixir \cite{Elixir} and Rust \cite{Rust}, and to install our Hastega.
+
 Installing and setting CUDA \cite{CUDA} and OpenCL \cite{OpenCL} in CuPy \cite{CuPy} needs more steps than our Hastega because CuPy requires older CUDA \cite{CUDA}, which requires us to investigate Q \& A sites such as Stack Overflow \cite{StackOverflow}.
 
-Installation of our Hastega is never tedious. Its building tool sets up itself, automatically. All you need is to install OpenCL \cite{OpenCL}, to install and set up Elixir \cite{Elixir} and Rust \cite{Rust}, and to install our Hastega.
+Disadvantage of Hastega is installation of Languages: it requires two languages, Elixir \cite{Elixir} and Rust \cite{Rust}. 
+
 
 \begin{table}[t]
 \centering
@@ -52,7 +55,7 @@ Installation of our Hastega is never tedious. Its building tool sets up itself, 
 \begin{tabular}{lrr}
                                & \multicolumn{1}{l}{CuPy} & \multicolumn{1}{l}{Hastega} \\ \hline
 Installation of CUDA \& OpenCL & 4                        & 1                           \\
-Installation of Languages      & 1                        & 4                           \\
+Installation of Languages      & 2                        & 4                           \\
 Installation of Libraries      & 2                        & 1                           \\ \hline
 \end{tabular}
 \end{table}
