@@ -47,7 +47,7 @@ Installation of our Hastega is never tedious. Its building tool sets up itself, 
 
 \begin{table}[t]
 \centering
-\caption{Comparison of Steps of Setting Processes in GCE}
+\caption{Comparison of Steps of Installation and Setting Processes in GCE}
 \label{setting}
 \begin{tabular}{lrr}
                                & \multicolumn{1}{l}{CuPy} & \multicolumn{1}{l}{Hastega} \\ \hline
