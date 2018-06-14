@@ -11,7 +11,7 @@ Thus, we adopt Elixir \cite{Elixir} for the purpose of machine learning, because
 
 Thus, we propose the Hastega method that is based on a hypothesis that a programming style using Flow \cite{Flow} of Elixir, which is similar to the MapReduce model \cite{Dean:2008:MSD:1327452.1327492}, can be converted to GPGPU code easily. We also implement a GPGPU code to manipulate GPUs in Elixir and Rust \cite{Rust} using Rustler \cite{Rustler}. 
 
-The rest of this paper is organized as follows: Section 2 proposes our core idea to convert an Elixir code to drive GPUs. Section 3 describes an implementation of our approach. Section 4 shows environments of our experiments, description of benchmarks and results and discussion. Section 5 concludes this paper and describes future works. 
+The rest of this paper is organized as follows: Section 2 proposes our core idea to convert an Elixir code to drive GPUs, and an implementation of our Hastega approach. Section 3 shows steps of installation and settings processes. Section 4 shows environments of our experiments, description of benchmarks and results and discussion. Section 5 concludes this paper and describes future works. 
 
 # Hastega Strategy and Implementation
 
@@ -41,9 +41,9 @@ Our implementation is published in GitHub \footnote{LogisticMap: Benchmark of Lo
 
 Table \ref{setting} shows comparison of steps of setting processes in Google Compute Engine(GCE) \cite{GCE}. 
 
-Setting CUDA and OpenCL in CuPy \cite{CuPy} needs more steps than our Hastega because CuPy requires older CUDA \cite{CUDA}, which requires us to investigate Q \& A sites such as Stack Overflow \cite{StackOverflow}.
+Installing and setting CUDA \cite{CUDA} and OpenCL \cite{OpenCL} in CuPy \cite{CuPy} needs more steps than our Hastega because CuPy requires older CUDA \cite{CUDA}, which requires us to investigate Q \& A sites such as Stack Overflow \cite{StackOverflow}.
 
-Installation of our Hastega is never tedious. Its building tool sets up itself, automatically. All you need is to install OpenCL \cite{OpenCL}, to install Elixir \cite{Elixir} and Rust \cite{Rust}, and to install our Hastega.
+Installation of our Hastega is never tedious. Its building tool sets up itself, automatically. All you need is to install OpenCL \cite{OpenCL}, to install and set up Elixir \cite{Elixir} and Rust \cite{Rust}, and to install our Hastega.
 
 \begin{table}[t]
 \centering
@@ -52,7 +52,7 @@ Installation of our Hastega is never tedious. Its building tool sets up itself, 
 \begin{tabular}{lrr}
                                & \multicolumn{1}{l}{CuPy} & \multicolumn{1}{l}{Hastega} \\ \hline
 Installation of CUDA \& OpenCL & 4                        & 1                           \\
-Installation of Languages      & 1                        & 2                           \\
+Installation of Languages      & 1                        & 4                           \\
 Installation of Libraries      & 2                        & 1                           \\ \hline
 \end{tabular}
 \end{table}
