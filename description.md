@@ -34,7 +34,7 @@ Our strategy is shown in our previous work \cite{ZACKY18}: The parallel programm
 
 **Fig. \ref{fig:Hastega-arch}** shows the Hastega architecture. Then, we describe the native code in our benchmark in Rust \cite{Rust} using Rustler \cite{Rustler} and ocl \cite{ocl}. This leads to awesome easiness of setting: it requires only installing languages, OpenCL \cite{OpenCL} and our Hastega by each one-sentence command. This is a big advantage over Python\cite{Python}, CUDA\cite{CUDA} and related libraries such as CuPy\cite{CuPy}.  
 
-\begin{figure}[b]
+\begin{figure}[t]
 \includegraphics{Hastega-arch}
 \caption{The Hastega Architecture}
 \label{fig:Hastega-arch}
@@ -54,7 +54,7 @@ Installing and setting CUDA \cite{CUDA} and OpenCL \cite{OpenCL} in CuPy \cite{C
 Disadvantage of Hastega is installation of Languages: it requires two languages, Elixir \cite{Elixir} and Rust \cite{Rust}. 
 
 
-\begin{table}[t]
+\begin{table}[b]
 \centering
 \caption{Comparison of Steps of Installation and Setting Processes in GCE}
 \label{setting}
