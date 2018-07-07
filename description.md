@@ -148,21 +148,21 @@ We will show the following benchmarks:
            &                  &              & \multicolumn{1}{l|}{2.8GHz Quad-Core Intel Xeon} & \multicolumn{1}{l|}{Intel Broadwell vCPU:8}           \\
            &                  &              & \multicolumn{1}{l|}{ATI Radeon HD 5770} & \multicolumn{1}{l|}{NVIDIA Tesla K80} \\ 
            &                  &              &  (sec)        & (sec) \\ \hline
-Elixir\_recursive & Elixir    & recursive call & 12.421           & 9.537            \\
-Elixir\_inlining & Elixir     & inlining     & 10.947             & 8.020            \\
-Elixir\_Rustler\_CPU & Elixir / Rustler & CPU          & 6.882              & 7.908            \\
+Elixir\_recursive             & Elixir           & recursive call & 12.421           & 9.537            \\
+Elixir\_inlining              & Elixir           & inlining       & 10.947           & 8.020            \\
+Elixir\_Rustler\_CPU          & Elixir / Rustler & CPU            & 6.882            & 7.908            \\
 \rowcolor[HTML]{C0C0C0}
-Elixir\_Rustler\_CPU\_multi & Elixir / Rustler & CPU   & 1.733              & N/A              \\
+Elixir\_Rustler\_CPU\_multi   & Elixir / Rustler & CPU            & 1.733            & N/A              \\
 \rowcolor[HTML]{C0C0C0}
-Elixir\_Rustler\_GPU & Elixir / Rustler & OpenCL (GPU) & 2.374              & 4.494            \\
-Empty      & Elixir / Rustler & empty        & 1.253              & 4.022            \\
-Rust\_CPU  & Rust        & CPU          & 2.935              & 1.723            \\
+Elixir\_Rustler\_GPU          & Elixir / Rustler & OpenCL (GPU)   & 2.374            & 4.494            \\
+Empty                         & Elixir / Rustler & empty          & 1.253            & 4.022            \\
+Rust\_CPU                     & Rust             & CPU            & 2.935            & 1.723            \\
 \rowcolor[HTML]{C0C0C0}
-Rust\_CPU\_multi & Rust  & CPU          & 0.666              & N/A             \\
+Rust\_CPU\_multi              & Rust             & CPU            & 0.666            & N/A             \\
 \rowcolor[HTML]{C0C0C0}
-Rust\_GPU  & Rust        & OpenCL (GPU) & 1.542              & 0.794           \\
-Python\_CPU & Python      & NumPy (CPU)  & 17.749              & 11.341 \\
-Python\_GPU & Python      & CuPy (GPU)   & N/A                & 4.316 \\           
+Rust\_GPU                     & Rust             & OpenCL (GPU)   & 1.542            & 0.794           \\
+Python\_CPU                   & Python           & NumPy (CPU)    & 17.749           & 11.341          \\
+Python\_GPU                   & Python           & CuPy (GPU)     & N/A              & 4.316           \\
 \end{tabular}
 \end{table*}
 
