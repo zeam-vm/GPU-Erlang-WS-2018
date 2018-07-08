@@ -140,7 +140,7 @@ We will show the following benchmarks:
 
 * Rustler\_GPU and Rustler\_CPU\_multi are 4.43--8.23 times and 5.68--6.97 times faster than pure Elixir, which means Elixir\_recursive and Elixir\_inlining.
 * The ratio of the difference between Rustler\_GPU and Empty is 8.29--10.5 percents. We indentify that it is net execution time apart from the overhead of the conversions between expressions of a list in Elixir and a vector in Rust.
-* Pure Elixir and Rustler\_GPU is 1.19--1.53 times and 2.52--2.7 times faster than Python\_CPU, respectively.
+* Pure Elixir and Rustler\_GPU is 1.17--1.68 times and 7.43--9.64 times faster than Python\_CPU, respectively.
 * Rustler\_GPU is 3.67 times faster than Python\_GPU.
 * The ratios of the difference between Bnechmark8 and Rust\_CPU and between Rustler\_GPU and Rust\_GPU is 72.0--78.2 and 71.7--82.3 percents, respectively. We identify that it is the overhead of Erlang VM.
 * Rust\_GPU is 3.54--5.66 times faster than Rustler\_GPU and Python\_GPU. This is the potential of optimization.
@@ -182,7 +182,7 @@ We have demonstrated the effectiveness of our Hastega method by the Logistic Map
 
 We have conducted the performance evaluation of the experimental implementation of GPGPU by Elixir and Rustler. We have got the following results:
 
-* Elixir and Rustler code using GPU is 4.43--8.23 times and 2.52--2.7 times faster than pure Elixir and Python code executed by only CPU, respectively.
+* Elixir and Rustler code using GPU is 4.43--8.23 times and 7.43--9.64 times faster than pure Elixir and Python code executed by only CPU, respectively.
 * The performance gap of Elixir and Rustler code using GPU by our strategy is only 3.54--5.66 times compared with native code using GPU.
 * Additionally, our Hastega method for Elixir achieves 3.67 times faster than Python code with GPU.
 
