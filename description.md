@@ -142,7 +142,7 @@ We will show the following benchmarks:
 * The ratio of the difference between Rustler\_GPU and Empty is 8.29--10.5 percents. We indentify that it is net execution time apart from the overhead of the conversions between expressions of a list in Elixir and a vector in Rust.
 * Pure Elixir and Rustler\_GPU is 1.17--1.68 times and 7.43--9.64 times faster than Python\_CPU, respectively.
 * Rustler\_GPU is 3.67 times faster than Python\_GPU.
-* The ratios of the difference between Bnechmark8 and Rust\_CPU and between Rustler\_GPU and Rust\_GPU is 72.0--78.2 and 71.7--82.3 percents, respectively. We identify that it is the overhead of Erlang VM.
+* The ratios of the difference between Rustler\_CPU and Rust\_CPU and between Rustler\_GPU and Rust\_GPU is 72.0--78.2 and 71.7--82.3 percents, respectively. We identify that it is the overhead of Erlang VM.
 * Rust\_GPU is 3.54--5.66 times faster than Rustler\_GPU and Python\_GPU. This is the potential of optimization.
 
 \begin{table*}[t]
