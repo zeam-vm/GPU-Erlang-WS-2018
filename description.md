@@ -139,6 +139,7 @@ We will show the following benchmarks:
 **Table \ref{result}** shows the result of the benchmarks.
 
 * Rustler\_GPU and Rustler\_CPU\_multi are 4.43--8.23 times and 5.68--6.97 times faster than pure Elixir, which means Elixir\_recursive and Elixir\_inlining.
+* The order of Rustler\_CPU\_multi and Rustler\_GPU is converse in the cases of Mac Pro (Mid 2010) and GCE because the lack of the thread pool of rayon affects performance in the case of Linux.
 * The ratio of the difference between Rustler\_GPU and Empty is 22.2--27.6 percents. We indentify that it is net execution time apart from the overhead of the conversions between expressions of a list in Elixir and a vector in Rust.
 * Pure Elixir and Rustler\_GPU is 1.17--1.68 times and 7.43--9.64 times faster than Python\_CPU, respectively.
 * Rustler\_GPU is 3.67 times faster than Python\_GPU.
