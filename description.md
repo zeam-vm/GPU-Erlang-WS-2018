@@ -131,8 +131,8 @@ We will show the following benchmarks:
 * Rust\_CPU: that is written in only Rust. The logistic maps are calculated by CPU with single-threaded.
 * Rust\_CPU\_multi: that is similar to Rust\_CPU, but the logistic maps are calculated with multi-threaded by rayon \cite{rayon} and a thread pool of rayon is enabled.
 * Rust\_GPU: that is written in only Rust. The logistic maps are calculated by GPU via OpenCL with ocl.
-* Python\_CPU: that is written in only \cite{Python} with NumPy \cite{NumPy}.
-* Python\_GPU: that is written in only \cite{Python} with CuPy \cite{CuPy} with GPU.
+* Python\_CPU: that is written in Python \cite{Python} with NumPy \cite{NumPy}.
+* Python\_GPU: that is written in Python \cite{Python} with CuPy \cite{CuPy} with GPU.
 
 ## Evaluation Result and Discussion
 
