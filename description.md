@@ -182,7 +182,7 @@ We have demonstrated the effectiveness of our Hastega method by the Logistic Map
 
 We have conducted the performance evaluation of the experimental implementation of GPGPU by Elixir and Rustler. We have got the following results:
 
-* Elixir and Rustler code using GPU is 1.76--2.12 times and 2.52--2.7 times faster than pure Elixir and Python code executed by only CPU, respectively.
+* Elixir and Rustler code using GPU is 4.43--8.23 times and 2.52--2.7 times faster than pure Elixir and Python code executed by only CPU, respectively.
 * The performance gap of Elixir and Rustler code using GPU by our strategy is only 3.54--5.66 times compared with native code using GPU.
 * Additionally, our Hastega method for Elixir achieves 3.67 times faster than Python code with GPU.
 
