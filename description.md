@@ -98,16 +98,14 @@ We have evaluated two environments: Mac Pro (Mid 2010) and GCE \cite{GCE}.
 \begin{tabular}{l|ll}
                        & Mac Pro (Mid 2010)     & GCE                                      \\ \hline
 OS                     & Sierra 10.12.6         & ubuntu 16.04                             \\
-Elixir \cite{Elixir}   & 1.6.6 (OTP 21)         & 1.6.5 (OTP 20.3.6)                       \\
-Flow \cite{Flow}       & 0.14                   & 0.13                                     \\
-Rust \cite{Rust}       & 1.27.0                 & 1.26.1                                   \\
+Elixir \cite{Elixir}   & 1.6.6 (OTP 21)         & 1.6.6 (OTP 21)                           \\
+Flow \cite{Flow}       & 0.14                   & 0.14                                     \\
+Rust \cite{Rust}       & 1.27.0                 & 1.27.0                                   \\
 OpenCL \cite{OpenCL}   & 1.2                    & 1.2                                      \\
-Rustler \cite{Rustler} & 0.17.1                 & 0.16.0                                   \\
-ocl \cite{ocl}         & 0.18                   & 0.16                                     \\
-rayon \cite{rayon}     & 1.0                    &
-N/A                                      \\
-scoped-pool \cite{scoped-pool} & 1.0.0          &
-N/A                                      \\ \hline
+Rustler \cite{Rustler} & 0.17.1                 & 0.17.1                                   \\
+ocl \cite{ocl}         & 0.18                   & 0.18                                     \\
+rayon \cite{rayon}     & 1.0                    & 1.0                                      \\
+scoped-pool \cite{scoped-pool} & 1.0.0          & 1.0.0                                    \\ \hline
 Python \cite{Python}   & 3.6.0 (Anaconda 4.3.0) & 3.5.2                                    \\
 CUDA \cite{CUDA}       & N/A                    & 9.0 (in case of using CuPy), 9.2 (other) \\
 NumPy \cite{NumPy}     & 1.11.3                 & 1.14.3                                   \\
