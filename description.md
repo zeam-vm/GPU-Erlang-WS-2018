@@ -155,19 +155,19 @@ We will show the following benchmarks:
            &                  &              & \multicolumn{1}{l|}{2.8GHz Quad-Core Intel Xeon} & \multicolumn{1}{l|}{Intel Broadwell vCPU:8}           \\
            &                  &              & \multicolumn{1}{l|}{ATI Radeon HD 5770} & \multicolumn{1}{l|}{NVIDIA Tesla K80} \\ 
            &                  &              &  (sec)        & (sec) \\ \hline
-Elixir\_recursive             & Elixir           & recursive call & 12.421           & 9.674            \\
-Elixir\_inlining              & Elixir           & inlining       & 10.947           & 8.075            \\
-Rustler\_CPU                  & Elixir / Rustler & CPU            & 6.882            & 6.098            \\
+Elixir\_recursive             & Elixir           & recursive call & 12.177           & 9.674            \\
+Elixir\_inlining              & Elixir           & inlining       & 10.579           & 8.075            \\
+Rustler\_CPU                  & Elixir / Rustler & CPU            & 7.691            & 6.098            \\
 \rowcolor[HTML]{C0C0C0}
-Rustler\_CPU\_multi           & Elixir / Rustler & CPU            & 1.733            & 1.422              \\
+Rustler\_CPU\_multi           & Elixir / Rustler & CPU            & 1.748            & 1.422              \\
 \rowcolor[HTML]{C0C0C0}
-Rustler\_GPU                  & Elixir / Rustler & OpenCL (GPU)   & 2.374            & 1.176            \\
-Empty                         & Elixir / Rustler & empty          & 1.253            & 0.852            \\
-Rust\_CPU                     & Rust             & CPU            & 2.935            & 1.829            \\
+Rustler\_GPU                  & Elixir / Rustler & OpenCL (GPU)   & 2.388            & 1.176            \\
+Empty                         & Elixir / Rustler & empty          & 1.859            & 0.852            \\
+Rust\_CPU                     & Rust             & CPU            & 2.926            & 1.829            \\
 \rowcolor[HTML]{C0C0C0}
-Rust\_CPU\_multi              & Rust             & CPU            & 0.666            & 0.374             \\
+Rust\_CPU\_multi              & Rust             & CPU            & 0.669            & 0.374             \\
 \rowcolor[HTML]{C0C0C0}
-Rust\_GPU                     & Rust             & OpenCL (GPU)   & 1.542            & 0.797           \\
+Rust\_GPU                     & Rust             & OpenCL (GPU)   & 1.546            & 0.797           \\
 Python\_CPU                   & Python           & NumPy (CPU)    & 17.749           & 11.341          \\
 Python\_GPU                   & Python           & CuPy (GPU)     & N/A              & 4.316           \\
 \end{tabular}
