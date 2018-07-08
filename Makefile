@@ -13,7 +13,7 @@ all: ${PDF}
 description.tex: description.md
 	@cat $^ \
 	| pandoc -t latex \
-	| sed 's/includegraphics/includegraphics[width=1.0\\columnwidth]/g' \
+	| sed 's/includegraphics/includegraphics[width=0.8\\columnwidth]/g' \
 	| sed 's/\[htbp\]/\[t\]/g' \
 	> description.tex 
 
