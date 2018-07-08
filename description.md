@@ -121,11 +121,11 @@ We will show the following benchmarks:
 * Elixir\_recursive: that is written in only Elixir \cite{Elixir}. The calculation of the logistic maps is implemented using 10 times recursive calls.
 * Elixir\_inlining: that is written in only Elixir. The calculation of the logistic maps is inlined inside of Flow \cite{Flow}.
 * Rustler\_CPU: that is written in Elixir and Rust with Rustler \cite{Rustler}. The logistic maps are calculated by CPU with the native code in Rust \cite{Rust}, asynchronous NIF calls using thread pool by scoped-pool \cite{scoped-pool} and single-threaded.
-* Rustler\_CPU\_multi: that is similar to Rustler\_CPU, but the logistic maps are calculated with multi-threaded by rayon \cite{rayon}.
+* Rustler\_CPU\_multi: that is similar to Rustler\_CPU, but the logistic maps are calculated with multi-threaded by rayon \cite{rayon} though a thread pool of rayon is disabled because of the restriction of our implementation.
 * Rustler\_GPU: that is written in Elixir and Rust with Rustler. The logistic maps are calculated by GPU via OpenCL \cite{OpenCL} with the native code in Rust and ocl \cite{ocl}.
 * Empty: that is a dummy benchmark to be compared from a efficient point of view. It includes conversions between expressions of a list in Elixir and a vector in Rust, though it does not include the caliculation.
 * Rust\_CPU: that is written in only Rust. The logistic maps are calculated by CPU with single-threaded.
-* Rust\_CPU\_multi: that is similar to Rust\_CPU, but the logistic maps are calculated with multi-threaded by rayon \cite{rayon}.
+* Rust\_CPU\_multi: that is similar to Rust\_CPU, but the logistic maps are calculated with multi-threaded by rayon \cite{rayon} and a thread pool of rayon is enabled.
 * Rust\_GPU: that is written in only Rust. The logistic maps are calculated by GPU via OpenCL with ocl.
 * Python\_CPU: that is written in only \cite{Python} with NumPy \cite{NumPy}.
 * Python\_GPU: that is written in only \cite{Python} with CuPy \cite{CuPy} with GPU.
