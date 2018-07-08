@@ -19,6 +19,7 @@ Our strategy is shown in our previous work \cite{ZACKY18}: The parallel programm
 
 \begin{figure}[t]
 \setbox0\vbox{
+{\small
 \begin{verbatim}
 1..1000
   |> Flow.from_enumerable()
@@ -26,6 +27,7 @@ Our strategy is shown in our previous work \cite{ZACKY18}: The parallel programm
   |> Flow.map(bar)
   |> Enum.to_list 
 \end{verbatim}
+}
 }
 \centerline{\fbox{\box0}}
 \caption{Elixir code of list manipulation using Flow.}
@@ -58,12 +60,14 @@ Disadvantage of Hastega is installation of runtime for programming languages: it
 \centering
 \caption{Comparison of Steps of Installation and Setting Processes in GCE}
 \label{setting}
+{\small
 \begin{tabular}{lrr}
                                & \multicolumn{1}{l}{CuPy} & \multicolumn{1}{l}{Hastega} \\ \hline
 Installation of CUDA \& OpenCL & 4                        & 1                           \\
 Installation of Languages      & 0                        & 4                           \\
 Installation of Libraries      & 2                        & 1                           \\ \hline
 \end{tabular}
+}
 \end{table}
 
 # Performance Evaluation
